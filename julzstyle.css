@@ -151,6 +151,15 @@
             width: 100%;
         }
 
+        .badgehllight {
+            padding: 10px 32px;
+            border-radius: 999px;
+            border: var(--primary-blue) solid 1px;
+            background: rgba(2, 132, 199, 0.22);
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
         /* --- General Section Styling --- */
         section {
             padding: 80px 0;
