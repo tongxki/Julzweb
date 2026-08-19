@@ -332,3 +332,15 @@
             .hero p { font-size: 1rem; }
             section { padding: 60px 0; }
         }
+
+    @media (max-width: 700px) and (min-width: 300px) {
+     .calltoaction, .cta-btn-secondary {
+        display: block;
+        }
+
+        .cta-btn-secondary {
+            margin-top: 12px;
+            padding: 16px 32px;
+        }
+    }
+
