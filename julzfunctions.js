@@ -40,4 +40,37 @@ document.addEventListener("DOMContentLoaded", function() {
                     hamburger.classList.add('fa-bars');
                 });
             });
+
+            // --- Testimonial Carousel ---
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+
+            if (slides.length > 0) {
+                let currentSlide = 0;
+
+                const showSlide = (index) => {
+                    currentSlide = (index + slides.length) % slides.length;
+
+                    slides.forEach((slide, i) => {
+                        slide.classList.toggle('active', i === currentSlide);
+                    });
+
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentSlide);
+                    });
+                };
+
+                prevBtn?.addEventListener('click', () => showSlide(currentSlide - 1));
+                nextBtn?.addEventListener('click', () => showSlide(currentSlide + 1));
+
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => showSlide(index));
+                });
+
+                setInterval(() => {
+                    showSlide(currentSlide + 1);
+                }, 5000);
+            }
         });
