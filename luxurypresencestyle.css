@@ -112,7 +112,7 @@ nav {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.863)), url('assets/hero-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.863)), url('luxurypresenceassets/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -248,7 +248,7 @@ nav {
 
 /* --- Find Your Dream Home Section --- */
 .find-dream-home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.233)), url('assets/find-dream-home-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.233)), url('luxurypresenceassets/find-dream-home-bg.jpg');
     padding: 60px 20px;
     font-family: sans-serif;
     background-repeat: no-repeat;
